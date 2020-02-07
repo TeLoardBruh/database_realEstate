@@ -42,6 +42,7 @@ class LoginController extends Controller
         $this->middleware('guest:agent')->except('logout');
     }
 
+
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -74,6 +75,7 @@ class LoginController extends Controller
         ]);
     }
 
+    
     /**
      * @param Request $request
      * @param $guard
