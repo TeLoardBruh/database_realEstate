@@ -139,7 +139,7 @@
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">About Us</h2>
                     <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="{{url('/')}}">Home</a></li>
                         <li class="active">About Us</li>
                     </ul>
                 </div>
