@@ -10,10 +10,12 @@
             </div>
             <div class="card-body">
               <div class="table-responsive">
+              @foreach($agents as $agent)
+
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Name</th>
+                      <th>name</th>
                       <th>Position</th>
                       <th>Office</th>
                       <th>Age</th>
@@ -21,35 +23,20 @@
                       <th>Salary</th>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
-                  </tfoot>
                   <tbody>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
+                      <td>{{$agent->name}}</td>
+                      <td>{{$agent->email}}</td>
                       <td>Edinburgh</td>
                       <td>61</td>
-                      <td>2011/04/25</td>
+                      <td>{{$agent->created_at}}</td>
                       <td>$320,800</td>
                     </tr>
-                    <tr>
-                      <td>Garrett Winters</td>
-                      <td>Accountant</td>
-                      <td>Tokyo</td>
-                      <td>63</td>
-                      <td>2011/07/25</td>
-                      <td>$170,750</td>
-                    </tr>
+                    
                   </tbody>
                 </table>
+                @endforeach
+
               </div>
             </div>
           </div>

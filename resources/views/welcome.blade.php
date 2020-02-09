@@ -73,8 +73,6 @@
                     @else
                         <a href="{{ url('/login/admin') }}">Login-Admin</a>
                         <a href="{{ url('/login/agent') }}">Login-Agent</a>
-                        <a href="{{ url('/register/admin') }}">Register-Admin</a>
-                        <a href="{{ url('/register/agent') }}">Register-Agent</a>
                     @endauth
                 </div>
             @endif

@@ -5,12 +5,12 @@ Auth::routes();
 Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm')->name('login.admin');
 Route::get('/login/agent', 'Auth\LoginController@showAgentLoginForm')->name('login.agent');
 Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm')->name('register.admin');
-Route::get('/register/agent', 'Auth\RegisterController@showAgentRegisterForm')->name('register.agent');
+// Route::get('/admin/register_agent', 'Auth\RegisterController@AgentRegister');
 
 Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 Route::post('/login/agent', 'Auth\LoginController@agentLogin');
 Route::post('/register/admin', 'Auth\RegisterController@createAdmin')->name('register.admin');
-Route::post('/register/agent', 'Auth\RegisterController@createAgent')->name('register.agent');
+// Route::post('/admin/register_agent', 'Auth\RegisterController@createAgent');
 
 Route::view('/home', 'home')->middleware('auth');
 Route::group(['middleware' => 'auth:admin'], function () {
@@ -18,8 +18,16 @@ Route::group(['middleware' => 'auth:admin'], function () {
 });
 // agent route 
 Route::get('/admin/table_agent_list' ,'PageController@index');
-Route::get('/admin/register' ,'PageController@createAgent');
+
+//agent create in admin === === === === === === === === === === === === === === === ===
+Route::get('/admin/register_agent' ,'PageController@createAgent_inter');
+Route::post('/admin/register_agent' ,'PageController@createAgent');
+//end agent create in admin === === === === === === === === === === === === === === === ===
+
+// agent approve things from agent=== === === === === === === === === === === === === === === ===
 Route::get('/admin/approve' ,'PageController@approve');
+
+//end agent approve thing here === === === === === === === === === === === === === === === ===
 // report route
 Route::get('/admin/report/weekly' ,'PageController@weekly');
 Route::get('/admin/report/monthly' ,'PageController@monthly');
