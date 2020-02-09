@@ -30,7 +30,7 @@ Route::get('/admin/report/yearly' ,'PageController@yearly');
     // Route::view('/agent', 'agent');
 
     Route::get('/agent/property/index','PropertyController@index')->name('property.index');
-    Route::get('/agent/property/add','PropertyConroller@add')->name('propert.add');
+    Route::get('/agent/property/add','PropertyConroller@add')->name('property.add');
     Route::get('/agent/property/{property_id}/buying-contract/add','BuyingContractController@add')->name('bcontract.add');
     Route::post('/agent/property/{property_id}/buying-contract/save','BuyingContractController@save')->name('bcontract.save');
 
