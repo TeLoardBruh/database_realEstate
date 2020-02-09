@@ -13,6 +13,6 @@ class Property extends Model
         return $detail;
     }
     function bcontract(){
-        return $this->hasOne(BuyingContract::App);
+        return $this->hasOne(BuyingContract::class);
     }
 }
