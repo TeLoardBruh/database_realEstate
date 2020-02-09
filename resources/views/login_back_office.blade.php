@@ -10,34 +10,29 @@
     <link href="{{asset('css/style_interface.css')}}" rel="stylesheet">
     <link href="{{asset('fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <title>Login page</title>
+    <style>
+        body{
+            background-image: url("{{asset('images/back_login.png')}}");
+        }
+    </style>
 </head>
 
-<body>
-    @if (Route::has('login'))
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-
-            <!--Grid column-->
-            <div class="col-md-6">
-
-               
-            </div>
-
+<body bgcolor="#E6E6FA">
+@if (Route::has('login'))
+<div class="flex-center position-ref full-height m-5">
+        <div class="page m-5">
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+            @auth
+            <a class="btn btn-success" href="{{ url('/home') }}">Home</a>
+            @else
+            <a class="btn btn-success" href="{{ url('/login/admin') }}">Login-Admin</a>
+            <a class="btn btn-success" href="{{ url('/login/agent') }}">Login-Agent</a>
+            @endauth
         </div>
-        <!--Grid column-->
-
-    </div>
-    <div class="d-flex justify-content-between bg-secondary mb-3">
-    <div class="p-2 bg-info"></div>
-    <div class="p-2 bg-warning"> @auth
-                <a class="btn btn-info" href="{{ url('/home') }}">Home</a>
-                @else
-                <a class="btn btn-info" href="{{ url('/login/admin') }}">Login Admin</a>
-                <a class="btn btn-info" href="{{ url('/login/agent') }}">Login Agent</a>
-                @endauth</div>
-    <div class="p-2 bg-primary"></div>
-  </div>
-    @endif
+        @endif
+        </div>
+</div>
 </body>
 
 </html>
