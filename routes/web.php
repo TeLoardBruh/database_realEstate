@@ -25,11 +25,13 @@ Route::get('/admin/report/weekly' ,'PageController@weekly');
 Route::get('/admin/report/monthly' ,'PageController@monthly');
 Route::get('/admin/report/yearly' ,'PageController@yearly');
 
+//
+// Route::group(['middleware' => 'auth:agent'], function () {
+    // Route::view('/agent', 'agent');
 
-Route::group(['middleware' => 'auth:agent'], function () {
-    Route::view('/agent', 'agent');
-
-    Route::get('/agent/property/{property_id}/buying-contract','BuyingContractController@add')->name('bcontract.add');
+    Route::get('/agent/property/index','PropertyController@index')->name('property.index');
+    Route::get('/agent/property/add','PropertyConroller@add')->name('propert.add');
+    Route::get('/agent/property/{property_id}/buying-contract/add','BuyingContractController@add')->name('bcontract.add');
     Route::post('/agent/property/{property_id}/buying-contract/save','BuyingContractController@save')->name('bcontract.save');
 
     Route::get('/agent/buying-contracts','BuyingContractController@index')->name('bcontract.index');
@@ -44,4 +46,4 @@ Route::group(['middleware' => 'auth:agent'], function () {
     Route::get('/agent/invoice/{invoice_id}','InvoiceController@detail')->name('invoice.detail');
 
 
-});
+// });
