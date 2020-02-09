@@ -28,8 +28,7 @@
         </div>
     </div>
     <div class="page">
-        <!-- Top Banner--><a class="section section-banner text-center d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/banner-bg-02-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/banner-bg-02-1920x60.jpg) 1x, url(images/banner/banner-bg-02-3840x120.jpg) 2x )" target="_blank"><img src="images/banner/banner-fg-02-1600x60.png" srcset="images/banner/banner-fg-02-1600x60.png 1x, images/banner/banner-fg-02-3200x120.png 2x" alt="" width="1600" height="310"></a>
-        <!-- Page Header-->
+        
         <header class="section page-header">
             <!-- RD Navbar-->
             <div class="rd-navbar-wrap">
@@ -41,7 +40,7 @@
                                 <!-- RD Navbar Toggle-->
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!-- RD Navbar Brand-->
-                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo-default-229x43.png" alt="" width="229" height="43" /></a></div>
+                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="{{asset('images/logo_k.png')}}" alt="" width="229" height="43" /></a></div>
                             </div>
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap">
@@ -432,7 +431,7 @@
             </div>
         </section>
 
-        <!-- Bottom Banner--><a class="section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/banner-bg-01-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/banner-bg-01-1920x310.jpg) 1x, url(images/banner/banner-bg-01-3840x620.jpg) 2x )" target="_blank"><img src="images/banner/banner-fg-01-1600x310.png" srcset="images/banner/banner-fg-01-1600x310.png 1x, images/banner/banner-fg-01-3200x620.png 2x" alt="" width="1600" height="310"></a>
+       
         <!-- Page Footer-->
         <footer class="section section-fluid footer-classic">
         <div class="container-fluid">

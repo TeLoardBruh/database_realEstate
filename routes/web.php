@@ -1,5 +1,6 @@
 <?php
 Route::view('/', 'welcome');
+Route::view('/login_back_office', 'login_back_office');
 Auth::routes();
 
 Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm')->name('login.admin');

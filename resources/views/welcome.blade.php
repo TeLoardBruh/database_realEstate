@@ -23,16 +23,6 @@
 <body>
 
     <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-            <a href="{{ url('/home') }}">Home</a>
-            @else
-            <a href="{{ url('/login/admin') }}">Login-Admin</a>
-            <a href="{{ url('/login/agent') }}">Login-Agent</a>
-            @endauth
-        </div>
-        @endif
         <div class="page">
 
             <header class="section page-header">
@@ -46,7 +36,7 @@
                                     <!-- RD Navbar Toggle-->
                                     <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                     <!-- RD Navbar Brand-->
-                                    <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo-default-229x43.png" alt="" width="229" height="43" /></a></div>
+                                    <div class="rd-navbar-brand"><a class="brand" href="{{url('/')}}"><img src="images/logo_k.png" alt="" width="229" height="43" /></a></div>
                                 </div>
                                 <div class="rd-navbar-main-element">
                                     <div class="rd-navbar-nav-wrap">
