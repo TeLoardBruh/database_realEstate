@@ -60,7 +60,13 @@ class PageController extends Controller
     //end create agent in admin === === === === === === === === === === === === === === === ===
 
 
-    
+    public function aboutUs(){
+        return view('interface/about_us');
+    }
+
+    public function contactUs(){
+        return view('interface/contactUs');
+    }
     public function approve()
     {
         return view('manager.approve');

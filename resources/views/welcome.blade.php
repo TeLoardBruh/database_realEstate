@@ -51,52 +51,7 @@
                                 <div class="rd-navbar-main-element">
                                     <div class="rd-navbar-nav-wrap">
                                         <!-- RD Navbar Basket-->
-                                        <div class="rd-navbar-basket-wrap">
-                                            <button class="rd-navbar-basket fl-bigmug-line-shopping198" data-rd-navbar-toggle=".cart-inline"><span>2</span></button>
-                                            <div class="cart-inline">
-                                                <div class="cart-inline-header">
-                                                    <h5 class="cart-inline-title">In cart:<span> 2</span> Products</h5>
-                                                    <h6 class="cart-inline-title">Total price:<span> $800</span></h6>
-                                                </div>
-                                                <div class="cart-inline-body">
-                                                    <div class="cart-inline-item">
-                                                        <div class="unit align-items-center">
-                                                            <div class="unit-left"><a class="cart-inline-figure" href="#"><img src="images/product-mini-9-100x100.png" alt="" width="100" height="100" /></a></div>
-                                                            <div class="unit-body">
-                                                                <h6 class="cart-inline-name"><a href="#">CB2 Coup Grey Office Chair</a></h6>
-                                                                <div>
-                                                                    <div class="group-xs group-middle-custom">
-                                                                        <div class="table-cart-stepper">
-                                                                            <input class="form-input" type="number" data-zeros="true" value="1" min="1" max="1000" />
-                                                                        </div>
-                                                                        <h6 class="cart-inline-title">$550</h6>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-inline-item">
-                                                        <div class="unit align-items-center">
-                                                            <div class="unit-left"><a class="cart-inline-figure" href="#"><img src="images/product-mini-10-100x100.png" alt="" width="100" height="100" /></a></div>
-                                                            <div class="unit-body">
-                                                                <h6 class="cart-inline-name"><a href="#">Ikea Tertial Work lamp</a></h6>
-                                                                <div>
-                                                                    <div class="group-xs group-middle-custom">
-                                                                        <div class="table-cart-stepper">
-                                                                            <input class="form-input" type="number" data-zeros="true" value="1" min="1" max="1000" />
-                                                                        </div>
-                                                                        <h6 class="cart-inline-title">$250</h6>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-inline-footer">
-                                                    <div class="group-sm"><a class="button button-md button-default-outline-2 button-wapasha" href="#">Go to cart</a><a class="button button-md button-primary button-pipaluk" href="#">Checkout</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <!-- RD Navbar Search-->
                                         <div class="rd-navbar-search">
                                             <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
@@ -108,24 +63,15 @@
                                                 <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
                                             </form>
                                         </div>
-                                        <!-- RD Navbar Share-->
-                                        <div class="rd-navbar-share fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list">
-                                            <ul class="list-inline rd-navbar-share-list">
-                                                <li class="rd-navbar-share-list-item"><a class="icon fa fa-facebook" href="#"></a></li>
-                                                <li class="rd-navbar-share-list-item"><a class="icon fa fa-twitter" href="#"></a></li>
-                                                <li class="rd-navbar-share-list-item"><a class="icon fa fa-google-plus" href="#"></a></li>
-                                                <li class="rd-navbar-share-list-item"><a class="icon fa fa-instagram" href="#"></a></li>
-                                            </ul><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping198" href="cart-page.html"><span>2</span></a>
-                                        </div>
+                    
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
-                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url('/')}}">Home</a>
                                             </li>
-                                            <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/about')}}">About Us</a>
                                             </li>
-                                            <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
-                                            </li>
-                                            <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Contact Us</a>
+                     
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/contactUs')}}">Contact Us</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -358,8 +304,7 @@
                     </div>
                     <div class="container footer-bottom-panel wow fadeInUp">
                         <!-- Rights-->
-                        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Creator</span>. All rights reserved. <span> Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com">TemplateMonster</a></span>
-                        </p>
+                        <p class="rights"><span>Copyright &copy; KMJ Website 2020</span></span>
                     </div>
             </footer>
         </div>
