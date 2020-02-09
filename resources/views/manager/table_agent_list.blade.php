@@ -10,9 +10,8 @@
             </div>
             <div class="card-body">
               <div class="table-responsive">
-              @foreach($agents as $agent)
-
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
                   <thead>
                     <tr>
                       <th>name</th>
@@ -23,6 +22,8 @@
                       <th>Salary</th>
                     </tr>
                   </thead>
+                  @foreach($agents as $agent)
+
                   <tbody>
                     <tr>
                       <td>{{$agent->name}}</td>
@@ -34,8 +35,9 @@
                     </tr>
                     
                   </tbody>
+                  @endforeach
+
                 </table>
-                @endforeach
 
               </div>
             </div>
