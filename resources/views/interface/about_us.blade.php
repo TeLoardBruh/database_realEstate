@@ -43,38 +43,39 @@
                                 <div class="rd-navbar-brand"><a class="brand" href="{{url('/')}}"><img src="{{asset('images/logo_k.png')}}" alt="" width="229" height="43" /></a></div>
                             </div>
                             <div class="rd-navbar-main-element">
-                                <div class="rd-navbar-nav-wrap">
-                                    <!-- RD Navbar Basket-->
-                                    
-                                    <!-- RD Navbar Search-->
-                                    <div class="rd-navbar-search">
-                                        <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
-                                        <form class="rd-search" action="#" method="GET">
-                                            <div class="form-wrap">
-                                                <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
-                                                <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" />
-                                            </div>
-                                            <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
-                                        </form>
-                                    </div>
-                                    <!-- RD Navbar Share-->
-                                    
-                                    <!-- RD Navbar Nav-->
-                                    <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('/')}}">Home</a>
-                                        </li>
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url('interface/about')}}">About Us</a>
-                                        </li>
+                                    <div class="rd-navbar-nav-wrap">
+                                        <!-- RD Navbar Basket-->
 
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/contactUs')}}">Contact Us</a>
-                                        </li>
-                                    </ul>
+                                        <!-- RD Navbar Search-->
+                                        <div class="rd-navbar-search">
+                                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                            <form class="rd-search" action="#" method="GET">
+                                                <div class="form-wrap">
+                                                    <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                                                    <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" />
+                                                </div>
+                                                <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <!-- RD Navbar Nav-->
+                                        <ul class="rd-navbar-nav">
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('/')}}">Home</a>
+                                            </li>
+                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url('interface/about')}}">About Us</a>
+                                            </li>
+
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/contactUs')}}">Contact Us</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/list')}}">Listing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="rd-navbar-project-hamburger" data-rd-navbar-toggle=".rd-navbar-main">
+                                        <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                                        <div class="project-close"><span></span><span></span></div>
+                                    </div>
                                 </div>
-                                <div class="rd-navbar-project-hamburger" data-rd-navbar-toggle=".rd-navbar-main">
-                                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
-                                    <div class="project-close"><span></span><span></span></div>
-                                </div>
-                            </div>
                             <div class="rd-navbar-project rd-navbar-classic-project">
                                 <h4 class="text-spacing-50">Our Works</h4>
                                 <div class="rd-navbar-project-content rd-navbar-classic-project-content">

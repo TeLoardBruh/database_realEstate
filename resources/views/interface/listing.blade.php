@@ -57,14 +57,14 @@
 
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
-                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url('/')}}">Home</a>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('/')}}">Home</a>
                                             </li>
                                             <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/about')}}">About Us</a>
                                             </li>
 
                                             <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/contactUs')}}">Contact Us</a>
                                             </li>
-                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/list')}}">Listing</a>
+                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url('interface/list')}}">Listing</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -130,142 +130,136 @@
                     </nav>
                 </div>
             </header>
-            <!-- Swiper-->
-            <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-direction="vertical" data-nav="false">
-                <div class="swiper-wrapper text-center">
-                    <div class="swiper-slide context-dark" data-slide-bg="{{asset('images/cond.jpg')}}">
-                        <div class="swiper-slide-caption section-md">
-                            <div class="container">
-                                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0" >Condominium</h1>
-                                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Our team uses innovations combined with customized interior planning to deliver the best interior design for your home or office while saving costs.</p><a class="button button-primary button-ujarak" href="#" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide context-dark" data-slide-bg="{{asset('images/house.jpg')}}">
-                        <div class="swiper-slide-caption section-md">
-                            <div class="container">
-                                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">House</h1>
-                                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">All our designers and architects are completely committed to the end result, while being fully professional in all aspects of interior planning and design.</p><a class="button button-primary button-ujarak" href="#" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide context-dark" data-slide-bg="{{asset('images/land.jpg')}}">
-                        <div class="swiper-slide-caption section-md">
-                            <div class="container">
-                                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Land</h1>
-                                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">We develop individual room concepts for private and commercial use. Our team focuses on the interior design of private living rooms, hotels, offices, and more.</p><a class="button button-primary button-ujarak" href="#" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+<section class="section section-sm section-fluid bg-default text-center">
+        <div class="container-fluid">
+          <h3 class="wow fadeInLeft">Latest Projects</h3>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio you can browse the latest interior designs created in various styles and for different purposes. Our qualified design professionals are always ready to design something spectacular for you, even if it’s a residential interior improvement.</p>
+          <div class="isotope-filters isotope-filters-horizontal">
+            <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true"><span class="icon fa fa-caret-down"></span>Filter</button>
+            <ul class="isotope-filters-list" id="isotope-3">
+              <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">All</a></li>
+              <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">Apartments</a></li>
+              <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Offices</a></li>
+              <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">Corporate designs</a></li>
+            </ul>
+          </div>
+          <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-1-420x350.jpg')}}" alt="" width="420" height="350"/>
                 </div>
-                <!-- Swiper Pagination-->
-                <div class="swiper-pagination__module">
-                    <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span></div>
-                    <div class="swiper-pagination__divider"></div>
-                    <div class="swiper-pagination"></div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-1-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">379 Harvey Rd</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
                 </div>
-            </section>
-
-            <!-- See all services-->
-            <section class="section section-sm section-first bg-default text-center">
-                <div class="container">
-                    <div class="row row-30 justify-content-center">
-                        <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
-                            <div class="figure-classic figure-classic-left"><img src="{{asset('images/service.png')}}" alt="" width="513" height="561" />
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-xl-6">
-                            <div class="row row-30">
-                                <div class="col-sm-6 wow fadeInRight">
-                                    <article class="box-icon-modern box-icon-modern-custom">
-                                        <div>
-                                            <h3 class="box-icon-modern-big-title">See all services</h3>
-                                            <div class="box-icon-modern-decor"></div><a class="button button-md button-default-outline-2 button-wapasha" href="#">All services</a>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
-                                    <article class="box-icon-modern box-icon-modern-2">
-                                        <div class="box-icon-modern-icon fl-bigmug-line-cropping1"></div>
-                                        <h5 class="box-icon-modern-title"><a href="#">Online Listing Properties</a></h5>
-                                        <div class="box-icon-modern-decor"></div>
-                                        <p class="box-icon-modern-text">We create better experience for customers by just view online.</p>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
-                                    <article class="box-icon-modern box-icon-modern-2">
-                                        <div class="box-icon-modern-icon fl-bigmug-line-paintbrush9"></div>
-                                        <h5 class="box-icon-modern-title"><a href="#">Appointment With Our Agent</a></h5>
-                                        <div class="box-icon-modern-decor"></div>
-                                        <p class="box-icon-modern-text">We create better experience for customers by just view online.</p>
-                                    </article>
-                                </div>
-                                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
-                                    <article class="box-icon-modern box-icon-modern-2">
-                                        <div class="box-icon-modern-icon fl-bigmug-line-chat55"></div>
-                                        <h5 class="box-icon-modern-title"><a href="#">Consultations</a></h5>
-                                        <div class="box-icon-modern-decor"></div>
-                                        <p class="box-icon-modern-text">Our specialists are ready to consult you on any interior design related topic.</p>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-2-420x350.jpg')}}" alt="" width="420" height="350"/>
                 </div>
-            </section>
-
-
-
-
-            <!-- Agents Showing Face -->
-            <section class="section section-sm section-fluid bg-default">
-                <div class="container-fluid">
-                    <h3>Different people — one mission</h3>
-                    <div class="row row-sm row-30 justify-content-center">
-                        <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
-                            <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/Agent_Thompson.jpg')}}" alt="" width="420" height="424" /></a>
-                                <div class="team-classic-caption">
-                                    <h5 class="team-classic-name"><a href="#">Ryan Wilson</a></h5>
-                                    <p class="team-classic-status">Founder, Senior Designer</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
-                            <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/agent_6.jpeg')}}" alt="" width="420" height="424" /></a>
-                                <div class="team-classic-caption">
-                                    <h5 class="team-classic-name"><a href="#">Jill Peterson</a></h5>
-                                    <p class="team-classic-status">Architect</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
-                            <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/agent_3.jpeg')}}" alt="" width="420" height="424" /></a>
-                                <div class="team-classic-caption">
-                                    <h5 class="team-classic-name"><a href="#">Sam Robinson</a></h5>
-                                    <p class="team-classic-status">Senior Architect</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
-                            <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/agent_2.jpeg')}}" alt="" width="420" height="424" /></a>
-                                <div class="team-classic-caption">
-                                    <h5 class="team-classic-name"><a href="#">Mary Lee</a></h5>
-                                    <p class="team-classic-status">Decorator</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-2-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">64 James Ave</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
                 </div>
-            </section>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1" data-wow-delay=".2s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-3-420x350.jpg')}}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-3-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">861 E. Oklahoma Dr</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3" data-wow-delay=".3s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-4-420x350.jpg')}}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-4-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">14 Pulaski Str</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 2">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-5-420x350.jpg')}}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-5-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-5-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">8381 Peg Shop Str</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-6-420x350.jpg')}}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-6-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">830 Bridge Str</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 3" data-wow-delay=".2s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-7-420x350.jpg')}}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-7-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-7-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">29 Water Ln</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 2" data-wow-delay=".3s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="{{asset('images/fullwidth-gallery-8-420x350.jpg')}}" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-8-1200x800-original.jpg" data-lightgallery="item"><img src="{{asset('images/fullwidth-gallery-8-420x350.jpg')}}" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">7262 Blue Spring Dr</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
-            <!-- Page Footer-->
-            <footer class="section section-fluid footer-classic">
+
+           <!-- Page Footer-->
+           <footer class="section section-fluid footer-classic">
                 <div class="container-fluid">
                     <div class="row row-30 justify-content-center">
                         <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">

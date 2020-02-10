@@ -77,7 +77,9 @@ class PageController extends Controller
     }
     //end create agent in admin === === === === === === === === === === === === === === === ===
 
-
+    public function listing(){
+        return view('interface/listing');
+    }
     public function aboutUs(){
         return view('interface/about_us');
     }

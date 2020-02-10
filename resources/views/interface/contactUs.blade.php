@@ -44,7 +44,7 @@
                                 <div class="rd-navbar-main-element">
                                     <div class="rd-navbar-nav-wrap">
                                         <!-- RD Navbar Basket-->
-                                        
+
                                         <!-- RD Navbar Search-->
                                         <div class="rd-navbar-search">
                                             <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
@@ -56,15 +56,17 @@
                                                 <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
                                             </form>
                                         </div>
-                    
+
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
                                             <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('/')}}">Home</a>
                                             </li>
                                             <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/about')}}">About Us</a>
                                             </li>
-                     
+
                                             <li class="rd-nav-item active"><a class="rd-nav-link" href="{{url('interface/contactUs')}}">Contact Us</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{url('interface/list')}}">Listing</a>
                                             </li>
                                         </ul>
                                     </div>

@@ -41,6 +41,7 @@ Route::get('/admin/report/yearly' ,'PageController@yearly');
 // interface routing 
 Route::get('interface/about','PageController@aboutUs');
 Route::get('interface/contactUs','PageController@contactUs');
+Route::get('interface/list','PageController@listing');
 Route::group(['middleware' => 'auth:agent'], function () {
     Route::view('/agent', 'agent');
 });
