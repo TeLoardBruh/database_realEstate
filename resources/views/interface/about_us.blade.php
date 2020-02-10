@@ -40,7 +40,7 @@
                                 <!-- RD Navbar Toggle-->
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!-- RD Navbar Brand-->
-                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="{{asset('images/logo_k.png')}}" alt="" width="229" height="43" /></a></div>
+                                <div class="rd-navbar-brand"><a class="brand" href="{{url('/')}}"><img src="{{asset('images/logo_k.png')}}" alt="" width="229" height="43" /></a></div>
                             </div>
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap">
@@ -438,7 +438,7 @@
           <div class="row row-30 justify-content-center">
             <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
               <div class="box-footer box-footer-small">
-                <div class="footer-brand"><a href="index.html"><img src="images/logo-inverse-229x43.png" alt="" width="229" height="43"/></a></div>
+                <div class="footer-brand"><a href="{{url('/')}}"><img src="images/logo-inverse-229x43.png" alt="" width="229" height="43"/></a></div>
                 <p class="text-width-medium">Our design studio helps clients make wise decisions and avoid costly mistakes. Allow our designers and architectors to make your dream space a reality.</p>
                 <div class="contact-classic">
                   <div class="contact-classic-item">
