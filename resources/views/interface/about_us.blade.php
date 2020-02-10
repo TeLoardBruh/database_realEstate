@@ -138,6 +138,7 @@
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">About Us</h2>
                     <ul class="breadcrumbs-custom-path">
+                    <img src="{{asset('images/back_login.png')}}" alt="" width="300" height="561" />
                         <li><a href="{{url('/')}}">Home</a></li>
                         <li class="active">About Us</li>
                     </ul>
@@ -149,7 +150,7 @@
         <section class="section section-sm section-first bg-default text-md-left">
             <div class="container">
                 <div class="row row-50 justify-content-center align-items-xl-center">
-                    <div class="col-md-10 col-lg-5 col-xl-6"><img src="images/about-1-519x564.jpg" alt="" width="519" height="564" />
+                    <div class="col-md-10 col-lg-5 col-xl-6"><img src="{{asset('images/about.jpeg')}}" alt="" width="519" height="564" />
                     </div>
                     <div class="col-md-10 col-lg-7 col-xl-6">
                         <h1 class="text-spacing-25 font-weight-normal title-opacity-9">Why choose us</h1>
@@ -177,7 +178,7 @@
                                     <!-- Linear progress bar-->
                                     <article class="progress-linear progress-orange">
                                         <div class="progress-header">
-                                            <p>3d modeling</p>
+                                            <p>Location</p>
                                         </div>
                                         <div class="progress-bar-linear-wrap">
                                             <div class="progress-bar-linear"><span class="progress-value">72</span><span class="progress-marker"></span></div>
@@ -235,104 +236,7 @@
         </section>
 
         <!-- Latest Projects-->
-        <section class="section section-sm section-fluid bg-default">
-            <div class="container">
-                <h3>Project timeline</h3>
-            </div>
-            <!-- Owl Carousel-->
-            <div class="owl-carousel owl-classic owl-timeline" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="4" data-margin="30" data-autoplay="true" data-nav="true" data-dots="true">
-                <div class="owl-item">
-                    <!-- Thumbnail Classic-->
-                    <article class="thumbnail thumbnail-mary thumbnail-md">
-                        <div class="thumbnail-mary-figure"><img src="images/project-1-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img src="images/project-1-420x308.jpg" alt="" width="420" height="308" /></a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project"><a href="#">Los Angeles coworking center</a></h5><span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                            <time datetime="2019">2019</time>
-                        </h5>
-                    </div>
-                </div>
-                <div class="owl-item">
-                    <!-- Thumbnail Classic-->
-                    <article class="thumbnail thumbnail-mary thumbnail-md">
-                        <div class="thumbnail-mary-figure"><img src="images/project-2-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-masonry-gallery-10-1200x800-original.jpg" data-lightgallery="item"><img src="images/project-2-420x308.jpg" alt="" width="420" height="308" /></a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project"><a href="#">daycare center</a></h5><span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                            <time datetime="2007">2007</time>
-                        </h5>
-                    </div>
-                </div>
-                <div class="owl-item">
-                    <!-- Thumbnail Classic-->
-                    <article class="thumbnail thumbnail-mary thumbnail-md">
-                        <div class="thumbnail-mary-figure"><img src="images/project-3-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img src="images/project-3-420x308.jpg" alt="" width="420" height="308" /></a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project"><a href="#">Sun valley hotel</a></h5><span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                            <time datetime="2011">2011</time>
-                        </h5>
-                    </div>
-                </div>
-                <div class="owl-item">
-                    <!-- Thumbnail Classic-->
-                    <article class="thumbnail thumbnail-mary thumbnail-md">
-                        <div class="thumbnail-mary-figure"><img src="images/project-4-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/project-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/project-4-420x308.jpg" alt="" width="420" height="308" /></a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project"><a href="#">Residential house: living room</a></h5><span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                            <time datetime="2013">2013</time>
-                        </h5>
-                    </div>
-                </div>
-                <div class="owl-item">
-                    <!-- Thumbnail Classic-->
-                    <article class="thumbnail thumbnail-mary thumbnail-md">
-                        <div class="thumbnail-mary-figure"><img src="images/project-5-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/fullwidth-gallery-5-1200x800-original.jpg" data-lightgallery="item"><img src="images/project-5-420x308.jpg" alt="" width="420" height="308" /></a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project"><a href="#">Social Center</a></h5><span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                            <time datetime="2014">2014</time>
-                        </h5>
-                    </div>
-                </div>
-                <div class="owl-item">
-                    <!-- Thumbnail Classic-->
-                    <article class="thumbnail thumbnail-mary thumbnail-md">
-                        <div class="thumbnail-mary-figure"><img src="images/project-6-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/project-6-1200x800-original.jpg" data-lightgallery="item"><img src="images/project-6-420x308.jpg" alt="" width="420" height="308" /></a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project"><a href="#">Small Kitchen</a></h5><span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                            <time datetime="2017">2017</time>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
         <!-- What people Say-->
         <section class="section section-sm section-last bg-default">
@@ -375,58 +279,19 @@
         </section>
 
         <!-- Counter Classic-->
-        <section class="section section-fluid bg-default">
-            <div class="parallax-container" data-parallax-img="images/bg-counter-2.jpg">
-                <div class="parallax-content section-xl context-dark bg-overlay-26">
-                    <div class="container">
-                        <div class="row row-50 justify-content-center border-classic">
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">12</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Design awards</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">194</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Projects</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">2</span><span class="symbol">k</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Designed interiors</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">25</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Team members</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Our clients-->
         <section class="section section-xl bg-default">
             <div class="container">
                 <h3>Our clients</h3>
                 <div class="row row-30 row-sm">
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="images/clients-1-270x145.png" alt="" width="270" height="145" /></a></div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="images/clients-2-270x145.png" alt="" width="270" height="145" /></a></div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".1s"><a class="clients-classic" href="#"><img src="images/clients-3-270x145.png" alt="" width="270" height="145" /></a></div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown"><a class="clients-classic" href="#"><img src="images/clients-4-270x145.png" alt="" width="270" height="145" /></a></div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp"><a class="clients-classic" href="#"><img src="images/clients-5-270x145.png" alt="" width="270" height="145" /></a></div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".1s"><a class="clients-classic" href="#"><img src="images/clients-6-270x145.png" alt="" width="270" height="145" /></a></div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="images/clients-7-270x145.png" alt="" width="270" height="145" /></a></div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="images/clients-8-270x145.png" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="{{asset('images/house_1.jpg')}}" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="{{asset('images/house_2.jpeg')}}" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".1s"><a class="clients-classic" href="#"><img src="{{asset('images/apart_1.jpeg')}}" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown"><a class="clients-classic" href="#"><img src="{{asset('images/apart_2.jpeg')}}" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp"><a class="clients-classic" href="#"><img src="{{asset('images/apart_3.jpeg')}}" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".1s"><a class="clients-classic" href="#"><img src="{{asset('images/land_1.jpeg')}}" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="{{asset('images/house_3.jpeg')}}" alt="" width="270" height="145" /></a></div>
+                    <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="{{asset('images/land_2.jpeg')}}" alt="" width="270" height="145" /></a></div>
                 </div>
             </div>
         </section>

@@ -15,7 +15,7 @@
             <form class="user" method="POST" action='{{ url("/admin/register_agent") }}' aria-label="{{ __('Register') }}">
               @csrf
               <div class="form-group row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="col-sm-12 mb-3 mb-sm-0">
                   <input type="orm-control{{ $errors->has('name') ? ' is-invalid' : '' }}" class="form-control form-control-user" id="exampleFirstName" placeholder="Full Name" name="name" value="{{ old('name') }}" required autofocus>
                   @if ($errors->has('name'))
                   <span class="invalid-feedback" role="alert">
@@ -23,6 +23,7 @@
                   </span>
                   @endif
                 </div>
+                
 
               </div>
               <div class="form-group">
@@ -32,6 +33,39 @@
                   <strong>{{ $errors->first('email') }}</strong>
                 </span>
                 @endif
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-control-user form-control{{ $errors->has('gov_id') ? ' is-invalid' : '' }}" id="exampleInputEmail" placeholder="National ID Card" name="gov_id" value="{{ old('gov_id') }}" required>
+                @if ($errors->has('gov_id'))
+                <span class="invalid-feedback" role="alert">
+                  <strong>{{ $errors->first('gov_id') }}</strong>
+                </span>
+                @endif
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <input type="text" class="form-control form-control-user orm-control{{ $errors->has('phone_number') ? ' is-invalid' : '' }}" id="exampleInputPassword" placeholder="Phone Number" name="phone_number" required>
+                  @if ($errors->has('phone_number'))
+                  <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('phone_number') }}</strong>
+                  </span>
+                  @endif
+                </div>
+
+                <div class="col-sm-6">
+                  <input type="text" class="form-control form-control-user orm-control{{ $errors->has('sec_phone_number') ? ' is-invalid' : '' }}" id="exampleInputPassword" placeholder="Second Phone Number" name="sec_phone_number" required>
+                  @if ($errors->has('sec_phone_number'))
+                  <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('sec_phone_number') }}</strong>
+                  </span>
+                  @endif
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-2 col-form-label">D.O.B</label>
+                <div class="col-sm-10 mb-3 mb-sm-0">
+                  <input class="form-control form-control-user " type="date" value="2011-08-19" name="dob" id="example-date-input">
+                </div>
               </div>
               <div class="form-group row">
                 <div class="col-sm-6 mb-3 mb-sm-0">
@@ -47,6 +81,20 @@
                   <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password" name="password_confirmation" required>
                 </div>
               </div>
+              <div class="form-group row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <input type="text" class="form-control form-control-user orm-control{{ $errors->has('gender') ? ' is-invalid' : '' }}" id="exampleInputPassword" placeholder="Gender" name="gender" required>
+                  @if ($errors->has('gender'))
+                  <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('gender') }}</strong>
+                  </span>
+                  @endif
+                </div>
+
+               
+              </div>
+              
+
               <button type="submit" class="btn btn-primary">
                 {{ __('Register') }}
               </button>

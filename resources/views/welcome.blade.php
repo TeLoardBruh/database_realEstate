@@ -37,7 +37,7 @@
                                     <!-- RD Navbar Toggle-->
                                     <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                     <!-- RD Navbar Brand-->
-                                    <div class="rd-navbar-brand"><a class="brand" href="{{url('/')}}"><img src="images/logo_k.png" alt="" width="229" height="43" /></a></div>
+                                    <div class="rd-navbar-brand"><a class="brand" href="{{url('/')}}"><img src="{{asset('images/logo_k.png')}}" alt="" width="229" height="43" /></a></div>
                                 </div>
                                 <div class="rd-navbar-main-element">
                                     <div class="rd-navbar-nav-wrap">
@@ -131,15 +131,15 @@
             <!-- Swiper-->
             <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-direction="vertical" data-nav="false">
                 <div class="swiper-wrapper text-center">
-                    <div class="swiper-slide context-dark" data-slide-bg="images/slider-1-slide-1-1770x742.jpg">
+                    <div class="swiper-slide context-dark" data-slide-bg="{{asset('images/cond.jpg')}}">
                         <div class="swiper-slide-caption section-md">
                             <div class="container">
-                                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Condominium</h1>
+                                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0" >Condominium</h1>
                                 <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Our team uses innovations combined with customized interior planning to deliver the best interior design for your home or office while saving costs.</p><a class="button button-primary button-ujarak" href="#" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide context-dark" data-slide-bg="images/slider-1-slide-2-1770x742.jpg">
+                    <div class="swiper-slide context-dark" data-slide-bg="{{asset('images/house.jpg')}}">
                         <div class="swiper-slide-caption section-md">
                             <div class="container">
                                 <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">House</h1>
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide context-dark" data-slide-bg="images/slider-1-slide-3-1770x742.jpg">
+                    <div class="swiper-slide context-dark" data-slide-bg="{{asset('images/land.jpg')}}">
                         <div class="swiper-slide-caption section-md">
                             <div class="container">
                                 <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Land</h1>
@@ -169,7 +169,7 @@
                 <div class="container">
                     <div class="row row-30 justify-content-center">
                         <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
-                            <div class="figure-classic figure-classic-left"><img src="images/index-1-513x561.jpg" alt="" width="513" height="561" />
+                            <div class="figure-classic figure-classic-left"><img src="{{asset('images/service.png')}}" alt="" width="513" height="561" />
                             </div>
                         </div>
                         <div class="col-lg-7 col-xl-6">
@@ -222,7 +222,7 @@
                     <div class="row row-sm row-30 justify-content-center">
                         <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
                             <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-11-420x424.jpg" alt="" width="420" height="424" /></a>
+                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/Agent_Thompson.jpg')}}" alt="" width="420" height="424" /></a>
                                 <div class="team-classic-caption">
                                     <h5 class="team-classic-name"><a href="#">Ryan Wilson</a></h5>
                                     <p class="team-classic-status">Founder, Senior Designer</p>
@@ -231,7 +231,7 @@
                         </div>
                         <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
                             <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-12-420x424.jpg" alt="" width="420" height="424" /></a>
+                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/agent_6.jpeg')}}" alt="" width="420" height="424" /></a>
                                 <div class="team-classic-caption">
                                     <h5 class="team-classic-name"><a href="#">Jill Peterson</a></h5>
                                     <p class="team-classic-status">Architect</p>
@@ -240,7 +240,7 @@
                         </div>
                         <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
                             <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-13-420x424.jpg" alt="" width="420" height="424" /></a>
+                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/agent_3.jpeg')}}" alt="" width="420" height="424" /></a>
                                 <div class="team-classic-caption">
                                     <h5 class="team-classic-name"><a href="#">Sam Robinson</a></h5>
                                     <p class="team-classic-status">Senior Architect</p>
@@ -249,7 +249,7 @@
                         </div>
                         <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
                             <!-- Team Classic-->
-                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-14-420x424.jpg" alt="" width="420" height="424" /></a>
+                            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="{{asset('images/agent_2.jpeg')}}" alt="" width="420" height="424" /></a>
                                 <div class="team-classic-caption">
                                     <h5 class="team-classic-name"><a href="#">Mary Lee</a></h5>
                                     <p class="team-classic-status">Decorator</p>

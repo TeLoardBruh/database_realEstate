@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Admin;
 use App\Agent;
+use App\Agent_detail;
+use App\Revenue;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -35,7 +37,7 @@ class PageController extends Controller
     }
     public function index()
     {
-        $agents = Agent::all();
+        $agents = Agent_detail::all();
         return view('manager.table_agent_list',compact('agents'));
     }
     public function createAgent_inter()
@@ -50,11 +52,27 @@ class PageController extends Controller
     protected function createAgent(Request $request)
     {
         $this->validator($request->all())->validate();
-        Agent::create([
+        $agent = Agent::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
+        $detail = new Agent_detail;
+        $detail -> fullname = $request->get('name');
+        $detail -> email = $request->get('email');
+        $detail -> gov_id = $request->get('gov_id');
+        $detail -> phone_number = $request->get('phone_number');
+        $detail -> sec_phone_number = $request->get('sec_phone_number');
+        $detail -> password = $request->get('password');
+        $detail -> dob = $request->get('dob');
+        $detail -> agent_id = $agent->id;
+        $detail -> gender = $request->get('gender');
+
+        $detail -> save();
+        $revenue = new Revenue;
+        $revenue -> agent_id = $agent->id;
+        $revenue -> save();
+
         return redirect()->intended('login/agent');
     }
     //end create agent in admin === === === === === === === === === === === === === === === ===
