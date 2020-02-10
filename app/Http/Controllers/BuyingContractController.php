@@ -8,6 +8,7 @@ use App\BuyingContractDetail;
 use App\Property;
 use App\Client;
 use App\Revenue;
+use App\Invoice;
 use Auth;
 
 
@@ -75,8 +76,9 @@ class BuyingContractController extends Controller
         $invoice->amount = $amount;
         $invoice->save();
 
-        $revenue = Revenue::where('agent_id',$agent_id);
-        $revenue->amount = $revenue->amount + ($amount*0.1);
+        $revenue = Revenue::where('agent_id',$agent_id)->first();
+        $cur = $revenue->amount;
+        $revenue->amount = $cur + ($amount*0.1);
         $revenue->update();
 
         $invoices = BuyingContract::where('bcontract_id',$bcontract_id)->first()->invoices()->get();

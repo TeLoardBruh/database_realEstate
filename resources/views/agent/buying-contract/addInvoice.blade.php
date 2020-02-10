@@ -13,15 +13,12 @@
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4">Add Transaction</h1>
               </div>
-              <form class="user" method="post" action="{{route('bcontract.save',$pid)}}">
+              <form class="user" method="post" action="{{route('bcontract.invoice.save',$bcontract_id)}}">
                 @csrf
                 <div class="form-group row">
-                <input type="hidden" name="property_id" value="{{$pid}}">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" name="amount" placeholder="Amount">
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-user" id="exampleLastName" name="phone_number" placeholder="Buyer's phone number">
+                <input type="hidden" name="property_id" value="{{$bcontract_id}}">
+                  <div class="col-sm-12 mb-3 mb-sm-0">
+                    <input type="number" class="form-control form-control-user" id="exampleFirstName" name="amount" placeholder="Amount">
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-user btn-block">
