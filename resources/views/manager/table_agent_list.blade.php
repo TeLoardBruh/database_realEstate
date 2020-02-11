@@ -11,45 +11,40 @@
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
                   <thead>
                     <tr>
+                      <th>ID</th>
                       <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Gender</th>
+                      <th>Email</th>
+                      <th>National ID Card</th>
+                      <th>Date of Birth</th>
+                      <th>Phone Number</th>
+                      <th>Second Phone Number (optional)</th>
+                      <th>Created At</th>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
-                  </tfoot>
+                  @foreach($agents as $agent)
+
                   <tbody>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                      <td>{{$agent->agent_id}}</td>
+                      <td>{{$agent->fullname}}</td>
+                      <td>{{$agent->gender}}</td>
+                      <td>{{$agent->email}}</td>
+                      <td>{{$agent->gov_id}}</td>
+                      <td>{{$agent->dob}}</td>
+                      <td>{{$agent->phone_number}}</td>
+                      <td>{{$agent->sec_phone_number}}</td>
+                      <td>{{$agent->created_at}}</td>
                     </tr>
-                    <tr>
-                      <td>Garrett Winters</td>
-                      <td>Accountant</td>
-                      <td>Tokyo</td>
-                      <td>63</td>
-                      <td>2011/07/25</td>
-                      <td>$170,750</td>
-                    </tr>
+                    
                   </tbody>
+                  @endforeach
+
                 </table>
+
               </div>
             </div>
           </div>

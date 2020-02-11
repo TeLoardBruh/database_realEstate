@@ -72,7 +72,7 @@ class RegisterController extends Controller
      */
     public function showAgentRegisterForm()
     {
-        return view('auth.register', ['url' => 'agent']);
+        return view('manager.register_agent', ['url' => 'agent']);
     }
 
     /**
