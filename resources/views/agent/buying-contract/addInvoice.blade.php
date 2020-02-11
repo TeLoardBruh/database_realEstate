@@ -16,7 +16,7 @@
               <form class="user" method="post" action="{{route('bcontract.invoice.save',$bcontract_id)}}">
                 @csrf
                 <div class="form-group row">
-                <input type="hidden" name="property_id" value="{{$bcontract_id}}">
+                <input type="hidden" name="bcontract_id" value="{{$bcontract_id}}">
                   <div class="col-sm-12 mb-3 mb-sm-0">
                     <input type="number" class="form-control form-control-user" id="exampleFirstName" name="amount" placeholder="Amount">
                   </div>

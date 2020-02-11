@@ -60,7 +60,8 @@ class BuyingContractController extends Controller
     }
     public function invoices($bcontract_id){
         $invoices = BuyingContract::where('bcontract_id',$bcontract_id)->first()->invoices()->get();
-        return view('agent.buying-contract.invoices',compact('invoices'));
+        $bcontract = BuyingContract::where('bcontract_id',$bcontract_id)->first();
+        return view('agent.buying-contract.invoices',compact('invoices','bcontract'));
     }
     public function addInvoice($bcontract_id){
         return view('agent.buying-contract.addInvoice',compact('bcontract_id'));
@@ -82,6 +83,6 @@ class BuyingContractController extends Controller
         $revenue->update();
 
         $invoices = BuyingContract::where('bcontract_id',$bcontract_id)->first()->invoices()->get();
-        return view('agent.buying-contract.invoices',compact('invoices'));
+        return redirect(route('bcontract.invoices',$bcontract_id));
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Invoice;
 
 class InvoiceController extends Controller
 {
@@ -13,8 +14,8 @@ class InvoiceController extends Controller
         $invoice = Invoice::where('id',$id)->first();
         return view('agent.invoice.invoice',compact('invoice'));
     }
-    public function invoices($bcontract_id){
-        $invoice = Invoice::where('bccontract_id',$bcontract_id)->get();
-        return view('agent.buying-contract.invoices',compact('invoices'));
+    public function invoices(){
+        $invoices = Invoice::all();
+        return view('agent.invoice.index',compact('invoices'));
     }
 }

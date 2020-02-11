@@ -81,9 +81,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Reports Utilities:</h6>
-                        <a class="collapse-item" href="{{url('/agent/report/weekly')}}">Weekly</a>
-                        <a class="collapse-item" href="{{url('/agent/report/monthly')}}">Monthly</a>
-                        <a class="collapse-item" href="{{url('/agent/report/yearly')}}">Yearly</a>
+                        <a class="collapse-item" href="{{url('/agent/invoices')}}">All Transactions</a>
 
                     </div>
                 </div>
@@ -143,9 +141,14 @@
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
+                        <li class="nav-item no-arrow">
+                            <a class="nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="revenue">$ 0.00</span>
+                            </a>
+                        </li>
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Agent</span>
                                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -238,6 +241,18 @@
 <!-- Page level custom scripts -->
 <script src="{{asset('js/demo/chart-area-demo.js')}}"></script>
 <script src="{{asset('js/demo/chart-pie-demo.js')}}"></script>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url: '{{route('agent.revenue',1)}}',
+            method: 'post',
+            data: {'_token': '{{csrf_token()}}','agent_id': 1},
+            success: function(data){
+                $('#revenue').text('$ '+data.data);
+            }
+        })
+    })
+</script>
 @section('script')
 
 @show 

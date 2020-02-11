@@ -30,6 +30,7 @@ Route::get('/admin/report/yearly' ,'PageController@yearly');
     // Route::view('/agent', 'agent');
 
     Route::get('/agent/dashboard','AgentController@index')->name('agent.dashboard');
+    Route::post('/agent/revenue','AgentController@revenue')->name('agent.revenue');
 
     Route::get('/agent/property/index','PropertyController@index')->name('property.index');
     Route::get('/agent/property/add','PropertyConroller@add')->name('property.add');
@@ -46,9 +47,10 @@ Route::get('/admin/report/yearly' ,'PageController@yearly');
     Route::get('/agent/buying-contract/{bcontract_id}/invoice/add','BuyingContractController@addInvoice')->name('bcontract.invoice.add');
     Route::post('/agent/buying-contract/{bcontract_id}/invoice/save','BuyingContractController@saveInvoice')->name('bcontract.invoice.save');
 
-    Route::get('/agent/invoices','InvoiceController@index')->name('invoice.index');
+    Route::get('/agent/invoices','InvoiceController@invoices')->name('invoice.index');
     Route::post('/agent/invoices/data','InvoiceController@data')->name('invoice.data');
     Route::get('/agent/invoice/{invoice_id}','InvoiceController@detail')->name('invoice.detail');
 
-
+    Route::get('/agent/property/{pid}/selling-contract/add','SellingContractController@add')->name('scontract.add');
+    Route::post('/agent/property/{pid}/selling-contract/save','SellingContractController@save')->name('scontract.save');
 // });
